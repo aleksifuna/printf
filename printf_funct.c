@@ -14,15 +14,15 @@ int _printf(const char *format, ...)
 	va_start(ap, format);
 	i = 0;
 	count = 0;
-	while(format[i])
+	while (format[i])
 	{
 		if (format[i] == '%')
 		{
-			switch (format [i + 1])
+			switch (format[i + 1])
 			{
 			case 'c':
 				_putchar(va_arg(ap, int));
-				count ++;
+				count++;
 				break;
 			case 's':
 				count += print_str(va_arg(ap, char *));
@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 				count += print_int(va_arg(ap, int));
 				break;
 			case 'u':
-				count+= print_uns(va_arg(ap, unsigned int));
+				count += print_uns(va_arg(ap, unsigned int));
 				break;
 			default:
 				continue;
@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			_putchar(format[i]);
-			count ++;
+			count++;
 			i++;
 		}
 	}
