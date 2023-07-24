@@ -16,8 +16,14 @@ int print_int(int i)
 		i = i * -1;
 	}
 
-	return (print_abs (i) + 1);
+	return (print_abs(i) + 1);
 }
+/**
+ * print_abs - prints absolute i
+ * @i: interger to be printed
+ *
+ * Return: number of characters printed
+ */
 int print_abs(int i)
 {
 	int c;
@@ -38,7 +44,12 @@ int print_abs(int i)
 	}
 	return (c);
 }
-
+/**
+ * print_uns - print unsigned integer
+ * @i: unsigned integer to be prited
+ *
+ * Return: number of characters printed
+ */
 int print_uns(unsigned int i)
 {
 	int c;
@@ -52,7 +63,7 @@ int print_uns(unsigned int i)
 	}
 	else
 	{
-		print_uns(i /10);
+		print_uns(i / 10);
 
 		_putchar((i % 10) + '0');
 		c++;

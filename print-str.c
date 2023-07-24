@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print-str - prints a string.
+ * print_str - prints a string.
  * @str: string to be printed.
  *
  * Return: 1 on Success.
