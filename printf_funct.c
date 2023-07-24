@@ -27,6 +27,15 @@ int _printf(const char *format, ...)
 			case 's':
 				count += print_str(va_arg(ap, char *));
 				break;
+			case 'i':
+				count += print_int(va_arg(ap, int));
+				break;
+			case 'd':
+				count += print_int(va_arg(ap, int));
+				break;
+			case 'u':
+				count+= print_uns(va_arg(ap, unsigned int));
+				break;
 			default:
 				continue;
 			}
