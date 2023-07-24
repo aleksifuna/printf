@@ -37,8 +37,15 @@ int _printf(const char *format, ...)
 				count += print_uns(va_arg(ap, unsigned int));
 				break;
 			default:
-				continue;
+				_putchar(format[i]);
+				i--;
 			}
+			i += 2;
+		}
+		else if (format[i] == '%' && format[i + 1] == '%')
+		{
+			_putchar(format[i]);
+			count++;
 			i += 2;
 		}
 		else
