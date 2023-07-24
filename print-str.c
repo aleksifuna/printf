@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * print_str - prints a string.
  * @str: string to be printed.
@@ -10,6 +11,10 @@ int print_str(char *str)
 	int i;
 
 	i = 0;
+	if (str == NULL)
+	{
+		str = "(null)";
+	}
 	while (str[i])
 	{
 		_putchar(str[i]);
