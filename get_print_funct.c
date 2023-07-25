@@ -14,6 +14,7 @@ int (*get_funct(char spc))(va_list)
 		{'c', print_char},
 		{'s', print_str},
 		{'u', print_uns},
+		{'b', print_bin},
 	};
 	int i;
 

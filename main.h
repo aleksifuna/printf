@@ -9,6 +9,8 @@ int print_uns(va_list ap);
 int print_char(va_list ap);
 int print_abs(unsigned int i);
 int print_recur(unsigned int i);
+int print_bin(va_list ap);
+int bin_recur(unsigned int i);
 #include <stddef.h>
 /**
  * struct print_spec - struct spec
