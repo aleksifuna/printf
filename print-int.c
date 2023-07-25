@@ -13,10 +13,10 @@ int print_int(int i)
 	if (i < 0)
 	{
 		_putchar('-');
-		i = i * -1;
+		i = -i;
 	}
 
-	return (print_abs(i) + 1);
+	return (print_abs((unsigned int )i) + 1);
 }
 /**
  * print_abs - prints absolute i
@@ -24,7 +24,7 @@ int print_int(int i)
  *
  * Return: number of characters printed
  */
-int print_abs(int i)
+int print_abs(unsigned int i)
 {
 	int c;
 
