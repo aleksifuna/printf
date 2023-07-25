@@ -11,14 +11,16 @@ int _printf(const char *format, ...)
 	va_list ap;
 	int i, count, (*print_handle)(int);
 
-	va_start(ap, format);
-	count = i = 0;
 	if (format == NULL)
 		return (-1);
+	va_start(ap, format);
+	count = i = 0;
 	while (format[i])
 	{
 		if (format[i] == '%' && format[i - 1] != '\'')
 		{
+			if (format[i + 1] == '\0' || format[i + 1] == ' ')
+				return (-1);
 			if (format[i + 1] == 's')
 				count += print_str(va_arg(ap, char *));
 			else if (format[i + 1] == 'u')
