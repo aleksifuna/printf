@@ -31,19 +31,17 @@ int print_int(va_list ap)
  */
 int print_abs(unsigned int i)
 {
-	int c;
+	int count;
 
-	c = 0;
+	count = 0;
 	if (i / 10 == 0)
 	{
-		_putchar((i % 10) + '0');
-		c++;
+		return (_putchar((i % 10) + '0'));
 	}
 	else
 	{
-		print_abs(i / 10);
-		_putchar((i % 10) + '0');
-		c++;
+		count += print_abs(i / 10);
+		count +=_putchar((i % 10) + '0');
 	}
-	return (c);
+	return (count);
 }
