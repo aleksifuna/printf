@@ -26,7 +26,7 @@ int bin_recur(unsigned int i)
 
 	if (i / 2 == 0)
 	{
-		return(_putchar((i % 2) + '0'));
+		return (_putchar((i % 2) + '0'));
 	}
 	else
 	{

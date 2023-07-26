@@ -41,7 +41,7 @@ int print_abs(unsigned int i)
 	else
 	{
 		count += print_abs(i / 10);
-		count +=_putchar((i % 10) + '0');
+		count += _putchar((i % 10) + '0');
 	}
 	return (count);
 }

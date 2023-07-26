@@ -26,7 +26,7 @@ int print_recur(unsigned int i)
 
 	if (i / 10 == 0)
 	{
-		return(_putchar((i % 10) + '0'));
+		return (_putchar((i % 10) + '0'));
 	}
 	else
 	{
