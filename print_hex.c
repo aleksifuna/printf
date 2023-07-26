@@ -28,9 +28,9 @@ int hex_recur(unsigned int i)
 	{
 		remainder = i % 16;
 		if (remainder < 10)
-			return(_putchar(remainder + '0'));
+			return (_putchar(remainder + '0'));
 		else
-			return(_putchar(remainder - 10 + 'a'));
+			return (_putchar(remainder - 10 + 'a'));
 	}
 	else
 	{

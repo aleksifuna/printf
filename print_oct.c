@@ -26,7 +26,7 @@ int oct_recur(unsigned int i)
 
 	if (i / 8 == 0)
 	{
-		return(_putchar((i % 8) + '0'));
+		return (_putchar((i % 8) + '0'));
 	}
 	else
 	{
