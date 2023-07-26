@@ -26,14 +26,12 @@ int print_recur(unsigned int i)
 
 	if (i / 10 == 0)
 	{
-		_putchar((i % 10) + '0');
-		c++;
+		return(_putchar((i % 10) + '0'));
 	}
 	else
 	{
-		print_recur(i / 10);
-		_putchar((i % 10) + '0');
-		c++;
+		c += print_recur(i / 10);
+		c += _putchar((i % 10) + '0');
 	}
 	return (c);
 }
