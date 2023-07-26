@@ -11,6 +11,12 @@ int print_abs(unsigned int i);
 int print_recur(unsigned int i);
 int print_bin(va_list ap);
 int bin_recur(unsigned int i);
+int print_oct(va_list ap);
+int oct_recur(unsigned int i);
+int print_hex(va_list ap);
+int hex_recur(unsigned int i);
+int print_heX(va_list ap);
+int heX_recur(unsigned int i);
 #include <stddef.h>
 /**
  * struct print_spec - struct spec
